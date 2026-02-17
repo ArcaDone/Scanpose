@@ -4,7 +4,6 @@ plugins {
     alias(libs.plugins.compose.multiplatform)
     alias(libs.plugins.android.kmp.library)
     `maven-publish`
-    signing
 }
 
 group = "com.github.ArcaDone"
@@ -59,7 +58,6 @@ android {
 
 publishing {
     publications.withType<MavenPublication> {
-        val javatarget = "jvm"
         val artifactIdSuffix = artifactId.substringAfter(project.name)
         val targetName = if (artifactIdSuffix == project.name) "" else artifactIdSuffix
 
@@ -89,8 +87,4 @@ publishing {
             }
         }
     }
-}
-
-signing {
-    sign(publishing.publications)
 }
