@@ -15,6 +15,15 @@ Built with **CameraX & MLKit** on Android and **AVFoundation** on iOS.
 - 🛡️ **Permission Handling**: Includes a helper `PermissionRequester` for handling camera permissions.
 - 🔦 **Debounce Support**: Prevents rapid duplicate scans (implemented in iOS coordinator, logic recommended for Android callback).
 
+## 🧩 Screenshots
+
+<table>
+<tr>
+<td><img src="screenshot/android.gif" width="400" alt="Android"/><br/></td>
+<td><img src="screenshot/iOS.gif" width="400" alt="iOS"/><br/></td>
+</tr>
+</table>
+
 ## 📦 Installation
 
 This module is designed to be integrated into your Compose Multiplatform project.
